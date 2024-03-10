@@ -1,20 +1,67 @@
+/* General styles */
+/* Set box-sizing to border-box so things behave.
+Also set all padding and margins to 0, it can be added back to individual elements where needed */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: blanchedalmond;
 }
 
+/* Computer hand section styles */
+
+
+/* Player hand section styles*/
 #player-hand{
     display: flex;
     justify-content: center;
+    align-items: center;
     top: 12rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 95%;
+    margin: auto;
 }
 
 .card {
     border: 2px outset black;
     border-radius: 10%;
     text-align: center;
-    font-size: x-large;
+    font-size: small;
     margin: 1%;
     min-height: 100px;
-    min-width: 80px;
+    min-width: 50px;
+    flex-grow: 1;
+}
+
+/* Media Queries */
+/* Changes for smallest screens 576px*/
+@media screen and (min-width:576px) {
+    .card {
+        font-size: medium;
+    }
+
+    #player-hand {
+        width: 90%;
+    }
+}
+
+/* Tablets and large or landscape mode phones, above 576 but below 768px */
+@media screen and (min-width:768px) {
+    .card {
+        font-size: large;
+    }
+
+    #player-hand {
+        width: 80%;
+    }
+}
+
+/* Computer screens or landscape tablets */
+@media screen and (min-width:992px) {
+    .card {
+        font-size: x-large;
+    }
 }
