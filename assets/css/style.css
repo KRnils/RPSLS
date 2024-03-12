@@ -8,18 +8,31 @@
 
 body {
     background-color: blanchedalmond;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 /* Computer hand section styles */
 
-
-/* Player hand section styles*/
-#player-hand{
+/* Game Field section styles*/
+#game-field {
     display: flex;
     justify-content: center;
     align-items: center;
     top: 12rem;
-    flex-wrap: nowrap;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.field-box {
+    margin: 10px;
+}
+
+/* Player hand section styles*/
+#player-hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12rem;
     width: 95%;
     margin: auto;
 }

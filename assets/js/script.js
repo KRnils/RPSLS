@@ -36,6 +36,8 @@ function clickButton(currentButton, allButtons) {
 
 function playCard(){
     console.log("play card");
+
+    //display message in game area
 }
 
 function animateButton(currentButton) {
