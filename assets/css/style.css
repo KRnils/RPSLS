@@ -12,6 +12,34 @@ body {
 }
 
 /* Computer hand section styles */
+#computer-hand {
+    background-color: aliceblue;
+    height: 380px;
+}
+
+#computer-face {
+    font-size: 8rem;
+}
+
+#computer-cards {
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    top: 30px;
+    left: 36vw; /* Needs slight offset because of .stack-card relative positioning, not perfect */
+    display: flex;
+}
+
+/* The position, left and top styles create the stacking cards effect */
+.stack-card {
+    position: relative;
+    background-color: white;
+    left: 10px;
+    top: 10px;
+    height: 280px;
+    width: 200px;
+    border: 2px outset black;
+}
 
 /* Game Field section styles*/
 #game-field {
@@ -41,11 +69,12 @@ body {
     /* set transition properties so cards moove smoothly */
     transition: all 200ms ease-in-out;
     border: 2px outset black;
-    border-radius: 10%;
+    border-radius: 10px;
     text-align: center;
     font-size: small;
     margin: 1%;
-    min-height: 100px;
+    height: 280px;
+    width: 200px;
     flex-basis: 50px;
     flex-grow: 1;
 }
@@ -62,7 +91,7 @@ body {
     }
 }
 
-/* Tablets and large or landscape mode phones, above 576 but below 768px */
+/* Tablets and large or landscape mode phones, above 576 but below 992px */
 @media screen and (min-width:768px) {
     .card {
         font-size: large;
