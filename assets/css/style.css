@@ -12,9 +12,9 @@ body {
 }
 
 /* Computer hand section styles */
-#computer-hand {
+#computer-side {
     background-color: aliceblue;
-    height: 380px;
+    height: 400px;
 }
 
 #computer-face {
@@ -23,8 +23,6 @@ body {
 
 #computer-cards {
     position: absolute;
-    height: 300px;
-    width: 600px;
     top: 30px;
     left: 36vw; /* Needs slight offset because of .stack-card relative positioning, not perfect */
     display: flex;
@@ -36,8 +34,9 @@ body {
     background-color: white;
     left: 10px;
     top: 10px;
-    height: 280px;
+    height: 300px;
     width: 200px;
+    border-radius: 5px;
     border: 2px outset black;
 }
 
@@ -57,7 +56,6 @@ body {
 
 /* Player hand section styles*/
 #player-hand {
-    display: flex;
     justify-content: center;
     align-items: center;
     top: 12rem;
@@ -69,21 +67,21 @@ body {
     /* set transition properties so cards moove smoothly */
     transition: all 200ms ease-in-out;
     border: 2px outset black;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     font-size: small;
     margin: 1%;
     height: 280px;
     width: 200px;
-    flex-basis: 50px;
-    flex-grow: 1;
 }
 
 /* Media Queries */
-/* Changes for smallest screens 576px*/
-@media screen and (min-width:576px) {
+/* Changes for smallest screens max 576px*/
+@media screen and (max-width:576px) {
     .card {
         font-size: medium;
+        height: 210px;
+        width: 140px;
     }
 
     #player-hand {
@@ -92,9 +90,11 @@ body {
 }
 
 /* Tablets and large or landscape mode phones, above 576 but below 992px */
-@media screen and (min-width:768px) {
+@media screen and (min-width:576px) {
     .card {
         font-size: large;
+        height: 240px;
+        width: 160px;
     }
 
     #player-hand {
@@ -103,8 +103,10 @@ body {
 }
 
 /* Computer screens or landscape tablets */
-@media screen and (min-width:992px) {
+@media screen and (min-width:768px) {
     .card {
         font-size: x-large;
+        height: 270;
+        width: 180;
     }
 }
