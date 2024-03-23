@@ -13,7 +13,6 @@ body {
 
 /* Computer hand section styles */
 #computer-side {
-    background-color: aliceblue;
     height: 250px;
     width: 100vw;
 }
@@ -41,10 +40,11 @@ body {
     border: 2px outset black;
 }
 
-/* Game Field section styles*/
+/* Game Field section styles */
 #game-field {
+    background-color: aliceblue;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     top: 12rem;
     width: 95%;
@@ -56,12 +56,17 @@ body {
 }
 
 /* Player hand section styles*/
+#player-side {
+    position: absolute;
+    top: 360px;
+    width: 100%;
+}
+
 #player-hand {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    top: 12rem;
     width: 400px;
     margin: auto;
 }
@@ -106,6 +111,10 @@ body {
     #computer-side {
         height: 350px;
     }
+
+    #player-side {
+        top: 370px;
+    }
 }
 
 /* Tablets, above 768 but below 992px */
@@ -132,6 +141,10 @@ body {
     #computer-side {
         height: 310px;
     }
+
+    #player-side {
+        top: 430px;
+    }
 }
 
 /* Computer screens, above 992px */
@@ -156,6 +169,10 @@ body {
     }
 
     #computer-side {
-        height: 400px;
+        height: 380px;
+    }
+
+    #player-side {
+        top: 500px;
     }
 }
