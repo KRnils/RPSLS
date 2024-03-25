@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: #1F1F1F;
     font-family: 'Source Code Pro', sans-serif;
 }
 
@@ -17,6 +17,7 @@ body {
 }
 
 #computer-face {
+    color: white;
     font-size: 200%;
 }
 
@@ -30,7 +31,7 @@ body {
 /* The position, left and top styles create the stacking cards effect */
 .stack-card {
     position: relative;
-    background-color: white;
+    background-color: #74985D;
     left: 10px;
     top: 10px;
     height: 120px;
@@ -41,7 +42,8 @@ body {
 
 /* Game Field section styles */
 #game-field {
-    background-color: aliceblue;
+    color: white;
+    background-color: #6C809A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +73,7 @@ body {
     /* set transition properties so cards moove smoothly */
     transition: all 200ms ease-in-out;
     background-color: white;
-    border: 2px outset black;
+    border: 4px outset #74985D;
     border-radius: 5px;
     text-align: center;
     font-size: small;
@@ -154,6 +156,6 @@ body {
     }
 
     #computer-side {
-        height: 300px;
+        height: 280px;
     }
 }
