@@ -37,22 +37,30 @@ body {
     height: 120px;
     width: 80px;
     border-radius: 5px;
-    border: 2px outset black;
+    border: 2px solid black;
 }
 
 /* Game Field section styles */
 #game-field {
     color: white;
     background-color: #6C809A;
+    border: 4px solid white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 95%;
     margin: 20px auto;
+    border-radius: 20px;
+    height: 100px;
 }
 
 .field-box {
-    margin: 10px;
+    margin: 30px
+}
+
+#game-status {
+    margin: 4px 10px auto 10px;
+    flex-grow: 2;
 }
 
 /* Player hand section styles*/
