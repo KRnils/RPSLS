@@ -11,9 +11,9 @@
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -54,15 +54,15 @@
     <section id="player-side">
         <!-- Player hand buttons, animated with CSS through JS, all cards have an "active" value starting as 0 but modified by JS to signify player choice -->
         <div id="player-hand">
-            <button id="rock" class="card"><i class="fa-regular fa-hand-back-fist"></i><br>Rock
+            <button id="rock" class="card"><i class="fa-regular fa-hand-back-fist"></i><br><div class="card-text">Rock</div>
             </button>
-            <button id="paper" class="card"><i class="fa-regular fa-file"></i><br>Paper
+            <button id="paper" class="card"><i class="fa-regular fa-file"></i><br><div class="card-text">Paper</div>
             </button>
-            <button id="scissors" class="card"><i class="fa-solid fa-scissors"></i><br>Scissors
+            <button id="scissors" class="card"><i class="fa-solid fa-scissors"></i><br><div class="card-text">Scissors</div>
             </button>
-            <button id="lizard" class="card"><i class="fa-solid fa-dragon"></i><br>Lizard
+            <button id="lizard" class="card"><i class="fa-solid fa-dragon"></i><br><div class="card-text">Lizard</div>
             </button>
-            <button id="spock" class="card"><i class="fa-regular fa-hand-spock"></i><br>Spock
+            <button id="spock" class="card"><i class="fa-regular fa-hand-spock"></i><br><div class="card-text">Spock</div>
             </button>
         </div>
         <button id="play-card-button">Play Selected Card</button>

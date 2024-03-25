@@ -24,7 +24,8 @@ body {
 #computer-cards {
     position: absolute;
     top: 20px;
-    left: 36vw; /* Needs slight offset because of .stack-card relative positioning, not perfect */
+    left: 36vw;
+    /* Needs slight offset because of .stack-card relative positioning, not perfect */
     display: flex;
 }
 
@@ -51,7 +52,7 @@ body {
     width: 95%;
     margin: 20px auto;
     border-radius: 20px;
-    height: 100px;
+    min-height: 100px;
 }
 
 .field-box {
@@ -88,6 +89,27 @@ body {
     margin: 1%;
     height: 120px;
     width: 80px;
+}
+
+.card-text {
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.card:hover {
+    background-color: gray;
+}
+
+#play-card-button {
+    font-family: 'Source Code Pro', sans-serif;
+    margin: auto;
+
+}
+
+#play-card-button:hover {
+    background-color: gray;
 }
 
 /* Media Queries */
