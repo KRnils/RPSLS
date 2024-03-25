@@ -1,7 +1,7 @@
 ## Table of Contents
 
 
-# Coffee-Site
+# RPSLS
 
 Welcome to RPSLS, here you can play the game Rock, Paper, Scissors, Lizard, Spock. The rules are simple, just like Rock paper scissors but with lizards and Spock.
 
@@ -20,20 +20,29 @@ amiresponsive result
 
 ## Introduction
 
+RPSLS is a web application that lets users enjoy a chance-based, single-user game against the computer online. RPSLS is based on the legacy (?) Rock Paper Scissors with added options. Users can pick a card to play it. They can do so multiple rounds with the score recorded and displayed.
+
 
 ## Design
 
 ### Colour Scheme
 
+I have chosen a dark-themed colour scheme for RPSLS where a simple and minimal colour combination of about four colour variations are picked. It uses green, blue, white and dark grey. As an online game, this colour scheme contributes to a strong visual contrast without being too overwhelming. For readability, the background remains contrasting to the colour of the text consistently.
 
 ### Typography
 
+I have picked Gemunu Libre as the font for the cards on the web application. It is very readable while still maintaining the fun element of a game. For the game status board, I have picked Source Code Pro as the font as it fits the mood and the theme while still being very readable.
 
 ### Accessibility
 
 * Semantic HTML is used as much as possible and conforming with best practices.
 * Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
 * Ensuring that there is a sufficient colour contrast throughout the site.
+* All links and buttons use some form of highlighting when hovered over to help convey that they are clickable.
+* Visual - all text and images are clear, legible, and visible.
+* Easy-to-navigate actions with large fonts and clear labels.
+* Site resizes well to most device types and screen configurations.
+
 
 ### Wireframes
 
@@ -47,7 +56,13 @@ Wireframes were created for mobile and desktop versions...
 
 ## Features
 
-* List features in bullet points
+* One html and JavaScript page with styles in one CSS file to create a uniform style
+* Five card options
+* One action button to play card
+* One action button to start a new game after the fifth round on a given game
+* One game status counter with score, round and narration.
+* One CPU/computer player display on top of the site with its hand to visualise computer as the competitor the user is playing against.
+* All buttons react to hover so it's clear that they are interactive
 
 ### Existing Features
 
