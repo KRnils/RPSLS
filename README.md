@@ -20,7 +20,7 @@ amiresponsive result
 
 ## Introduction
 
-RPSLS is a web application that lets users enjoy a chance-based, single-user game against the computer online. RPSLS is based on the legacy (?) Rock Paper Scissors with added options. Users can pick a card to play it. They can do so multiple rounds with the score recorded and displayed.
+RPSLS is a web application that lets users enjoy a chance-based, single-user game against the computer online. RPSLS is based on the classic Rock Paper Scissors with added options. Users can pick a card to play it. They can do so multiple rounds with the score recorded and displayed.
 
 
 ## Design

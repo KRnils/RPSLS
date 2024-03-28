@@ -43,16 +43,19 @@
             </div>
         </div>
     </section>
-    <section id="game-field">
-        <div class="field-box">score: <div id="score">0</div>
-        </div>
-        <div id="game-status" class="field-box">Pick a card and play it
-        </div>
-        <div class="field-box">round: <div id="round">0</div>
+    <section id="middle-section">
+        <div id="game-field">
+            <button id="start-button">Start new game</button>
+            <div class="field-box">score: <div id="score">0</div>
+            </div>
+            <div id="game-status" class="field-box"> 
+            </div>
+            <div class="field-box">round: <div id="round">0</div>
+            </div>
         </div>
     </section>
     <section id="player-side">
-        <!-- Player hand buttons, animated with CSS through JS, all cards have an "active" value starting as 0 but modified by JS to signify player choice -->
+        <!-- Player hand buttons, animated with CSS through JS -->
         <div id="player-hand">
             <button id="rock" class="card"><i class="fa-regular fa-hand-back-fist"></i><br><div class="card-text">Rock</div>
             </button>

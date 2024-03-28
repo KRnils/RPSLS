@@ -41,7 +41,7 @@ body {
     border: 2px solid black;
 }
 
-/* Game Field section styles */
+/* Middle section styles */
 #game-field {
     color: white;
     background-color: #6C809A;
@@ -55,8 +55,13 @@ body {
     min-height: 100px;
 }
 
+#start-button {
+    position: absolute;
+    left: 46vw;
+}
+
 .field-box {
-    margin: 30px
+    margin: 5px
 }
 
 #game-status {
