@@ -1,5 +1,24 @@
 ## Table of Contents
-
+  * [Table of Contents](#table-of-contents)
+- [RPSLS](#rpsls)
+  * [Introduction](#introduction)
+  * [Design](#design)
+    + [Colour Scheme](#colour-scheme)
+    + [Typography](#typography)
+    + [Accessibility](#accessibility)
+    + [Wireframes](#wireframes)
+  * [Features](#features)
+    + [Existing Features](#existing-features)
+  * [Testing](#testing)
+    + [W3C Validator Testing](#w3c-validator-testing)
+    + [Accessibility Test](#accessibility-test)
+    + [Solved Bugs](#solved-bugs)
+    + [Known Bugs](#known-bugs)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Code](#code)
+    + [Tools](#tools)
 
 # RPSLS
 
