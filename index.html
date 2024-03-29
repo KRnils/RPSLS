@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -45,30 +47,45 @@
     </section>
     <section id="middle-section">
         <div id="game-field">
-            <button id="start-button">Start new game</button>
-            <div class="field-box">score: <div id="score">0</div>
+            <div class="field-box">
+                <div>Score</div>
+                <div>You</div> 
+                <div id="score">0</div>
+                <br>
+                <div>computer</div> 
+                <div id="computer-score">0</div>
             </div>
-            <div id="game-status" class="field-box"> 
+            <div id="game-status" class="field-box">
             </div>
             <div class="field-box">round: <div id="round">0</div>
             </div>
         </div>
     </section>
     <section id="player-side">
+        <div class="button-container">
+            <button id="start-button">Start new game</button>
+        </div>
         <!-- Player hand buttons, animated with CSS through JS -->
         <div id="player-hand">
-            <button id="rock" class="card"><i class="fa-regular fa-hand-back-fist"></i><br><div class="card-text">Rock</div>
+            <button id="rock" class="card"><i class="fa-regular fa-hand-back-fist"></i><br>
+                <div class="card-text">Rock</div>
             </button>
-            <button id="paper" class="card"><i class="fa-regular fa-file"></i><br><div class="card-text">Paper</div>
+            <button id="paper" class="card"><i class="fa-regular fa-file"></i><br>
+                <div class="card-text">Paper</div>
             </button>
-            <button id="scissors" class="card"><i class="fa-solid fa-scissors"></i><br><div class="card-text">Scissors</div>
+            <button id="scissors" class="card"><i class="fa-solid fa-scissors"></i><br>
+                <div class="card-text">Scissors</div>
             </button>
-            <button id="lizard" class="card"><i class="fa-solid fa-dragon"></i><br><div class="card-text">Lizard</div>
+            <button id="lizard" class="card"><i class="fa-solid fa-dragon"></i><br>
+                <div class="card-text">Lizard</div>
             </button>
-            <button id="spock" class="card"><i class="fa-regular fa-hand-spock"></i><br><div class="card-text">Spock</div>
+            <button id="spock" class="card"><i class="fa-regular fa-hand-spock"></i><br>
+                <div class="card-text">Spock</div>
             </button>
         </div>
-        <button id="play-card-button">Play Selected Card</button>
+        <div class="button-container">
+            <button id="play-card-button">Play Selected Card</button>
+        </div>
     </section>
 
     <!-- Font Awesome -->

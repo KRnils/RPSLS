@@ -62,8 +62,9 @@ function clickCard(currentButton, allButtons) {
     }
 }
 
-/** Resets all counters and activates a game */
+/** Activates the game */
 function startGame(){
+    resetGame();
     enableGameButtons();
     document.getElementById("game-status").innerHTML = "Pick a card and play it";
     document.getElementById("game-status").style.display = "block";
@@ -78,6 +79,7 @@ async function playCard(playerHand) {
 
     let status = document.getElementById("game-status");    //game-status is the HTML element where the result of the game is displayed.
     let score = document.getElementById("score");           //score is the HTML element displaying the current score.
+    let computer_score = document.getElementById("computer-score");           //score is the HTML element displaying the current score.
     let round = document.getElementById("round");           //round is the HTML element displaying the current game round.
 
     let action = "";
@@ -95,59 +97,49 @@ async function playCard(playerHand) {
 
     await new Promise(r => setTimeout(r, 1000));    //sleep function to delay result (for dramatic effect).
 
-    //It is a bit long but it IS straightforward.
+    //This is a bit long but it IS straightforward.
     if (action == computerAction) {
         status.innerHTML += `<br>It's a tie!`;
     } else if (action == "Rock" && computerAction == "Scissors") {
-        status.innerHTML += `<br>Rock crushes Scissors. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Rock crushes Scissors. You win!`);
     } else if (action == "Rock" && computerAction == "Paper") {
-        status.innerHTML += `<br>Paper covers Rock. Computer wins!`
+        computerWin(`<br>Paper covers Rock. Computer wins!`);
     } else if (action == "Rock" && computerAction == "Lizard") {
-        status.innerHTML += `<br>Rock crushes Lizard. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Rock crushes Lizard. You win!`);
     } else if (action == "Rock" && computerAction == "Spock") {
-        status.innerHTML += `<br>Spock vaporizes Rock. Computer wins!`
+        computerWin(`<br>Spock vaporizes Rock. Computer wins!`);
     } else if (action == "Paper" && computerAction == "Rock") {
-        status.innerHTML += `<br>Paper covers Rock. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Paper covers Rock. You win!`);
     } else if (action == "Paper" && computerAction == "Scissors") {
-        status.innerHTML += `<br>Scissors cuts Paper. Computer wins!`
+        computerWin(`<br>Scissors cuts Paper. Computer wins!`);
     } else if (action == "Paper" && computerAction == "Lizard") {
-        status.innerHTML += `<br>Lizard eats Paper. Computer wins!`
+        computerWin("`<br>Lizard eats Paper. Computer wins!`");
     } else if (action == "Paper" && computerAction == "Spock") {
-        status.innerHTML += `<br>Paper disproves Spock. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Paper disproves Spock. You win!`);
     } else if (action == "Scissors" && computerAction == "Rock") {
-        status.innerHTML += `<br>Rock crushes Scissors. Computer wins!`
+        computerWin(`<br>Rock crushes Scissors. Computer wins!`);
     } else if (action == "Scissors" && computerAction == "Paper") {
-        status.innerHTML += `<br>Scissors cuts Paper. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Scissors cuts Paper. You win!`);
     } else if (action == "Scissors" && computerAction == "Lizard") {
-        status.innerHTML += `<br>Scissors decapitates Lizard. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Scissors decapitates Lizard. You win!`);
     } else if (action == "Scissors" && computerAction == "Spock") {
-        status.innerHTML += `<br>Spock smashes Scissors. Computer wins!`
+        computerWin(`<br>Spock smashes Scissors. Computer wins!`);
     } else if (action == "Lizard" && computerAction == "Rock") {
-        status.innerHTML += `<br>Rock crushes Lizard. Computer wins!`
+        computerWin(`<br>Rock crushes Lizard. Computer wins!`);
     } else if (action == "Lizard" && computerAction == "Paper") {
-        status.innerHTML += `<br>Lizard eats Paper. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Lizard eats Paper. You win!`);
     } else if (action == "Lizard" && computerAction == "Scissors") {
-        status.innerHTML += `<br>Scissors decapitates Lizard. Computer wins!`
+        computerWin(`<br>Scissors decapitates Lizard. Computer wins!`);
     } else if (action == "Lizard" && computerAction == "Spock") {
-        status.innerHTML += `<br>Lizard poisons Spock. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Lizard poisons Spock. You win!`);
     } else if (action == "Spock" && computerAction == "Rock") {
-        status.innerHTML += `<br>Spock vaporizes Rock. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Spock vaporizes Rock. You win!`);
     } else if (action == "Spock" && computerAction == "Paper") {
-        status.innerHTML += `<br>Paper disproves Spock. Computer wins!`
+        computerWin(`<br>Paper disproves Spock. Computer wins!`);
     } else if (action == "Spock" && computerAction == "Scissors") {
-        status.innerHTML += `<br>Spock smashes Scissors. You win!`
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        playerWin(`<br>Spock smashes Scissors. You win!`);
     } else if (action == "Spock" && computerAction == "Lizard") {
-        status.innerHTML += `<br>Lizard poisons Spock. Computer wins!`
+        computerWin(`<br>Lizard poisons Spock. Computer wins!`);
     } else {
         console.log("Something went wrong while calculating game logic");
     }
@@ -155,19 +147,40 @@ async function playCard(playerHand) {
     await new Promise(r => setTimeout(r, 1000));    //sleep function to delay result (for dramatic effect).
 
     if (parseInt(round.innerHTML) < 5) {
-        status.innerHTML += `<br>Pick an action for round ${round.innerHTML}`;
         round.innerHTML = parseInt(round.innerHTML) + 1;
+        status.innerHTML += `<br>Pick an action for round ${round.innerHTML}`;
+        enableGameButtons();
     } else {
-        status.innerHTML += `<br>Game end! You win/lose`;
-        resetGame();
-        document.getElementById("game-status").style.display = "block";
+        if (parseInt(score.innerHTML) == parseInt(computer_score.innerHTML)) {
+            status.innerHTML += `<br>Game end! The game is tied.`;
+        } else if (parseInt(computer_score.innerHTML) < parseInt(score.innerHTML)) {
+            status.innerHTML += `<br>Game end! You win :)`;
+        } else if (parseInt(computer_score.innerHTML) > parseInt(score.innerHTML)) {
+            status.innerHTML += `<br>Game end! You lose :(`;
+        } else {
+            console.log("Something is wrong with score calculation");
+        }
+        document.getElementById("start-button").style.display = "block";
+        clickCard(0, document.getElementsByClassName("card"));              //unselect all cards
     }
-    enableGameButtons();
 }
 
+/** Randomly returns a hand value */
 function computerHand() {
     let actions = ["Rock", "Paper", "Scissors", "Lizard", "Spock",];
     return actions[Math.floor(Math.random() * 5)];
+}
+
+/** This is repeated a lot so to make things a little bit simpler it was turned into a function */
+function computerWin(text){
+    document.getElementById("game-status").innerHTML += text;
+    document.getElementById("computer-score").innerHTML = parseInt(document.getElementById("computer-score").innerHTML) + 1;
+}
+
+/** This is repeated a lot so to make things a little bit simpler it was turned into a function */
+function playerWin(text){
+    document.getElementById("game-status").innerHTML += text;
+    document.getElementById("score").innerHTML = parseInt(document.getElementById("score").innerHTML) + 1;
 }
 
 /** Disables all game buttons so they cannot be activated when they shouldn't be. */
@@ -194,7 +207,8 @@ function enableGameButtons(){
  */
 function resetGame(){
     document.getElementById("score").innerHTML = "0";
+    document.getElementById("computer-score").innerHTML = "0";
     document.getElementById("round").innerHTML = "1";
-    document.getElementById("start-button").style.display = "block";
+    clickCard(0, document.getElementsByClassName("card"));              //click no card to unselect all cards.
     disableGameButtons();
 }
