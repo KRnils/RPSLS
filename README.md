@@ -5,7 +5,7 @@
 
 Welcome to RPSLS, here you can play the game Rock, Paper, Scissors, Lizard, Spock. The rules are simple, just like Rock paper scissors but with lizards and Spock.
 
-![amiresponsive result]()
+![amiresponsive result](assets/readme/amiresponsive-screenshot.jpg)
 
 ## Introduction
 
@@ -118,7 +118,7 @@ see [TESTING.md](TESTING.md) for all details and a full list of scores and other
 
 ### Known Bugs
 
-* Currently there are no known bugs
+* Currently there are no known bugs.
 
 ## Deployment
 
