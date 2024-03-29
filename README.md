@@ -46,7 +46,7 @@ I have picked Gemunu Libre as the font for the cards on the web application. It 
 
 ### Wireframes
 
-Wireframes were created for mobile and desktop versions...
+Wireframes were created for mobile and desktop versions
 
 - Home page
 
@@ -59,9 +59,12 @@ Wireframes were created for mobile and desktop versions...
 ## Features
 
 * One html and JavaScript page with styles in one CSS file to create a uniform style
+* The game's mechanics and artwork evoke the classic feel of playing cards, while also incorporating elements of modern collectible card games.
 * Five card options
-* One action button to play card
-* One action button to start a new game after the fifth round on a given game
+* Five rounds of exciting Rock Paper Scissors Lizard Spock gameplay.
+* CSS based animations when selecting cards.
+* One action button to play.
+* One action button to start a new game, this button is available after the page loads or after a game has finished.
 * One game status counter with score, round and narration.
 * One CPU/computer player display on top of the site with its hand to visualise computer as the competitor the user is playing against.
 * All buttons react to hover so it's clear that they are interactive
@@ -120,14 +123,18 @@ The live link can be found here - https://krnils.github.io/RPSLS/
 
 ### Content
 
-- bla
-- Some coding solutions were inspired by the Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) project
 - The icons for the playing cards are provided by [Font Awesome](https://fontawesome.com/)
 - Favicon was provided by https://favicon.io/ see [favicon about](assets/favicon/about.txt) for license details
 
-### Media
-- https://playgroundai.com/ was used to create the images for the reviews, they are all inspired by the real locations but I did not have time to go take pictures.
-- The red coffe cup on the home page is a photo by Archie Binamira found on Pexels.com, thanks! https://www.pexels.com/photo/red-ceramic-mug-on-red-saucer-1187317/
+### Code
+
+Almost all code is written from scratch, borrowed code has been modified to fit RPSLS better except for the sleep for Javascript one line solution.
+
+- Some coding solutions were inspired by the Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) project
+- Stacked cards inspiration https://freefrontend.com/css-stacked-cards/
+- Media queries reference https://www.solodev.com/blog/web-design/media-queries-and-mobile-css-best-practices.stml
+- How to uppercase first letter in a string https://www.shecodes.io/athena/3710-how-to-capitalize-the-first-letter-in-a-string-with-javascript
+- Javascript version of sleep https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 
 ### Tools
 
@@ -135,5 +142,6 @@ The live link can be found here - https://krnils.github.io/RPSLS/
 - [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1) helped find issues with performance, accessibility, and SEO. The final results are also included in this README.md.
 - [W3C HTML Validator](https://validator.w3.org/) Was used to validate all HTML, some issues were found and fixed this way.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) Was used to validate the CSS, no issues were found.
+- 
 - [Coolors](https://coolors.co/) was used to help pick colors that fit the mood while maintaining good contrast for readability and accessibility.
 - [http://ecotrust-canada.github.io/markdown-toc](http://ecotrust-canada.github.io/markdown-toc) table of contents generated with markdown-toc
