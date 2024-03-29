@@ -44,7 +44,7 @@ body {
 /* Middle section styles */
 #game-field {
     color: white;
-    background-color: #6C809A;
+    background-color: #4C607A;
     border: 4px solid white;
     display: flex;
     justify-content: space-between;
@@ -96,15 +96,15 @@ body {
     width: 80px;
 }
 
+/* Card text is separated from the (Font Awesome) icon on the cards so the font can be controlled */
 .card-text {
     font-family: "Gemunu Libre", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-
 .card:hover {
-    background-color: gray;
+    border: 4px solid #84A86D;
 }
 
 #play-card-button {
@@ -165,7 +165,7 @@ body {
     }
 
     #computer-side {
-        height: 310px;
+        height: 250px;
     }
 }
 

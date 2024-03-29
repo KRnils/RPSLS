@@ -40,7 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     resetGame();
 });
 
-/** Function to select and animate player cards */
+/** Function to select and animate player cards.
+ *  The clicked card becomes "checked" and is raised and highlighted.
+ *  Any other cards are set to not "checked" and are lowered and highlighting is removed.
+*/
 function clickCard(currentButton, allButtons) {
     //raise action cards and mark them as selected when clicked. Reverse if they are already selected.
     for (let button of allButtons) {
