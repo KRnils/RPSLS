@@ -36,7 +36,7 @@ At the last stage of development, Lighthouse (also in Chrome dev tools) was used
 [JSHint](https://jshint.com/) was used to test the JavaScript.
 
 * There were two warnings generated after ES6 features were set to allowed. These referred to:
-  * Risk of confusing semantics due to functions declared within loops referencing outer scoped variables. This is caused by the 
+  * Risk of confusing semantics due to functions declared within loops referencing outer scoped variables. This is caused by the event listener for the action cards. Since it's only a warning it will be left as is, but there should be possible to improve.
   * "'async functions' is only available in ES8", ES8 and async functions are widely adopted by browsers so this is not a big issue, but the site will not work for browser without support for ES8.
 
 ### Lighthouse

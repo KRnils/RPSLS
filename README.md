@@ -45,7 +45,6 @@ I have picked Gemunu Libre as the font for the cards on the web application. It 
 * Easy-to-navigate actions with large fonts and clear labels.
 * Site resizes well to most device types and screen configurations.
 
-
 ### Wireframes
 
 Wireframes were created for mobile and desktop versions
@@ -80,9 +79,11 @@ Wireframes were created for mobile and desktop versions
 
 ![Mobile screenshot](assets/readme/mobile-gameplay.jpg)
 
-- __Other feature__
+- __The Status Field__
 
-- ![Status field screenshot](assets/readme/status-field.jpg)
+- The status field lets the player know the outcome of their actions and the computer's actions. It lists the score for each side on the left and the current round of the game on the right. The middle section updates the status of the game with a slight pause so the game feels more like a realistic ongoing game with an opponent rather than a near-immediate calculation.
+
+![Status field screenshot](assets/readme/status-field.jpg)
 
 ## Testing
 
@@ -98,22 +99,26 @@ __All CSS has been testeed with W3C validator (Jigsaw) and show no errors or war
 
 __All JavaScript has been testeed with [JSHint](https://jshint.com/)__
 
-There were two warnings but nothing serious see [TESTING.md](TESTING.md) for all details.
+There were two warnings 
+* Risk of confusing semantics due to functions declared within loops referencing outer scoped variables.
+* "'async functions' is only available in ES8" meaning the site will not work properly on browsers that do not support ES8.
+
+see [TESTING.md](TESTING.md) for more discussion.
 
 ### Accessibility Test
 
-
+All Lighthouse test scores reached 100 except performance which was at 99.
 
 see [TESTING.md](TESTING.md) for all details and a full list of scores and other tests performed.
 
 ### Solved Bugs
 
-* Early on it took one click with no effect to make the player action cards behave as expected. This seems to be because of the "checked" attribute which is being assigned in the JavaScript
-* For a while it was possible to play a card while the game status was still being updated causing multiple rounds to be played at once and messing up the output. This is possible because of the use of async to delay the output. Buttons were set to disable while the output is being written to avoid this issue.
+* Early on the first click on the player action cards had no effect, after that the game could be played normally. This seems to be because of the "checked" attribute which is being assigned in the JavaScript. A workaround was found so the buttons work as they should now.
+* For a while it was possible to play a card while the game status was still being updated causing multiple rounds to be played at once and messing up the output. This is possible because of the use of async to delay the output. Buttons were set to be disabled while the output is being written to avoid this issue.
 
 ### Known Bugs
 
-* 
+* Currently there are no known bugs
 
 ## Deployment
 
