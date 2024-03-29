@@ -165,7 +165,7 @@ async function playCard(playerHand) {
     }
 }
 
-/** Randomly returns a hand value */
+/** Randomly returns an action value */
 function computerHand() {
     let actions = ["Rock", "Paper", "Scissors", "Lizard", "Spock",];
     return actions[Math.floor(Math.random() * 5)];

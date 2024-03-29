@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <section id="computer-side">
+    <div id="computer-side">
 
         <!--Nesting the divs like this creates the stack of cards look-->
         <div id="computer-cards">
@@ -44,8 +44,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="middle-section">
+    </div>
+    <div id="middle-section">
         <div id="game-field">
             <div class="field-box">
                 <div>Score</div>
@@ -60,33 +60,33 @@
             <div class="field-box">round: <div id="round">0</div>
             </div>
         </div>
-    </section>
-    <section id="player-side">
+    </div>
+    <div id="player-side">
         <div class="button-container">
             <button id="start-button">Start new game</button>
         </div>
         <!-- Player hand buttons, animated with CSS through JS -->
         <div id="player-hand">
             <button id="rock" class="card"><i class="fa-regular fa-hand-back-fist"></i><br>
-                <div class="card-text">Rock</div>
+                <span class="card-text">Rock</span>
             </button>
             <button id="paper" class="card"><i class="fa-regular fa-file"></i><br>
-                <div class="card-text">Paper</div>
+                <span class="card-text">Paper</span>
             </button>
             <button id="scissors" class="card"><i class="fa-solid fa-scissors"></i><br>
-                <div class="card-text">Scissors</div>
+                <span class="card-text">Scissors</span>
             </button>
             <button id="lizard" class="card"><i class="fa-solid fa-dragon"></i><br>
-                <div class="card-text">Lizard</div>
+                <span class="card-text">Lizard</span>
             </button>
             <button id="spock" class="card"><i class="fa-regular fa-hand-spock"></i><br>
-                <div class="card-text">Spock</div>
+                <span class="card-text">Spock</span>
             </button>
         </div>
         <div class="button-container">
             <button id="play-card-button">Play Selected Card</button>
         </div>
-    </section>
+    </div>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8041ffff28.js" crossorigin="anonymous"></script>
