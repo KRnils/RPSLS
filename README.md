@@ -5,23 +5,25 @@
 
 Welcome to RPSLS, here you can play the game Rock, Paper, Scissors, Lizard, Spock. The rules are simple, just like Rock paper scissors but with lizards and Spock.
 
-"Scissors cuts Paper
-Paper covers Rock
-Rock crushes Lizard
-Lizard poisons Spock
-Spock smashes Scissors
-Scissors decapitates Lizard
-Lizard eats Paper
-Paper disproves Spock
-Spock vaporizes Rock
-(and as it always has) Rock crushes Scissors"
-
 ![amiresponsive result]()
 
 ## Introduction
 
-RPSLS is a web application that lets users enjoy a chance-based, single-user game against the computer online. RPSLS is based on the classic Rock Paper Scissors with added options. Users can pick a card to play it. They can do so multiple rounds with the score recorded and displayed.
+RPSLS is a web application that lets users enjoy a chance-based, single-user game against the computer online. RPSLS is based on the classic Rock Paper Scissors with added options. Users can pick a card to play. They can do so multiple rounds with the score recorded and displayed. A game consists of 5 rounds, after 5 rounds a winner is declared.
 
+The winner is decided according to these rules:
+* Scissors cuts Paper
+* Paper covers Rock
+* Rock crushes Lizard
+* Lizard poisons Spock
+* Spock smashes Scissors
+* Scissors decapitates Lizard
+* Lizard eats Paper
+* Paper disproves Spock
+* Spock vaporizes Rock
+* Rock crushes Scissors
+
+For more information see this page from one of the originators [ROCK PAPER SCISSORS SPOCK LIZARD](http://www.samkass.com/theories/RPSSL.html)
 
 ## Design
 
@@ -96,11 +98,11 @@ __All CSS has been testeed with W3C validator (Jigsaw) and show no errors or war
 
 __All JavaScript has been testeed with [JSHint](https://jshint.com/)__
 
-add results
+There were two warnings but nothing serious see [TESTING.md](TESTING.md) for all details.
 
 ### Accessibility Test
 
-comments + results
+
 
 see [TESTING.md](TESTING.md) for all details and a full list of scores and other tests performed.
 

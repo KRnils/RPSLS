@@ -13,7 +13,7 @@ body {
 
 /* Computer hand section styles */
 #computer-side {
-    height: 200px;
+    height: 150px;
 }
 
 #computer-face {
@@ -23,9 +23,8 @@ body {
 
 #computer-cards {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 36vw;
-    /* Needs slight offset because of .stack-card relative positioning, not perfect */
     display: flex;
 }
 
@@ -35,8 +34,8 @@ body {
     background-color: #74985D;
     left: 10px;
     top: 10px;
-    height: 120px;
-    width: 80px;
+    height: 90px;
+    width: 60px;
     border-radius: 5px;
     border: 2px solid black;
 }
@@ -51,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    margin: 20px auto;
+    margin: 15px auto;
     border-radius: 20px;
     min-height: 100px;
 }
