@@ -44,20 +44,12 @@ At the last stage of development, Lighthouse (also in Chrome dev tools) was used
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website. 
 
 __Desktop Scores__
-| Page | Performance | Accessibility | SEO | Best Practices |
-|---|---|---|---|---|
-|index.html|99|100|100|100|
-|reviews.html|100|100|100|100|
-|contact.html|100|100|100|100|
-|thank-you.html|100|100|100|100|
+
+- ![Desktop lighthouse scores](assets/readme/lighthouse-desktop.jpg)
 
 __Mobile Scores__
-| Page | Performance | Accessibility | SEO | Best Practices |
-|---|---|---|---|---|
-|index.html|97|100|100|100|
-|reviews.html|96|100|100|100|
-|contact.html|100|100|100|100|
-|thank-you.html|99|100|100|100|
+
+- ![Mobile lighthouse scores](assets/readme/lighthouse-mobile.jpg)
 
 
 ### Am I Responsive Results
@@ -67,27 +59,15 @@ Below are the results from [Am I Responsive](https://ui.dev/amiresponsive)
 * index.html
 ![Results of https://ui.dev/amiresponsive test for index.html](assets/readme/amiresponsive-index.jpg)
 
-* reviews.html
-![Results of https://ui.dev/amiresponsive test for reviews.html](assets/readme/amiresponsive-reviews.jpg)
-
-* contact.html
-![Results of https://ui.dev/amiresponsive test for contact.html](assets/readme/amiresponsive-contact.jpg)
-
-* thank-you.html
-![Results of https://ui.dev/amiresponsive test for thank-you.html](assets/readme/amiresponsive-thank-you.jpg)
-
-
 ## MANUAL TESTING
 ### Devices
 
 The site was fully tested with the following devices and browsers
 
 * Macbook Pro 14-inch, 2023
-    * Browser: Chrome, Safari
-* Macbook Air 11-inch, Early-2015
-    * Browser: Safari
-* Desktop computer with 24-inch screen
-  * Browser: Firefox
+  * Browser: Chrome, Safari
+* Macbook Pro 15-inch, 2018
+  * Browser: Safari
 * iPhone 13
   * Browser: Safari
 * iPhone 12 Mini
@@ -96,60 +76,11 @@ The site was fully tested with the following devices and browsers
 
 ### Tests Performed Per Page
 
-`Home - Cork Coffee Friend (index.html)`
+`RPSLS (index.html)`
 
 | Feature | Expected Outcome | Testing Performed | Pass/Fail |
 | --- | --- | --- | --- |
-| The sites title | Link directs the user back to index.html (reloads current page) | Clicking or tapping | Pass |
-| Navbar "Reviews" link | Redirects to the Reviews page | Clicking or tapping | Pass |
-| Navbar "Contact" link | Redirects to the Contact page | Clicking or tapping | Pass |
-| Go to reviews link | Redirects to the reviews page | Clicking or tapping | Pass |
-| Instagram Icon in footer| Opens a new tab to site author's Instagram page | Clicking or tapping | Pass |
-| Github Icon in footer| Opens a new tab to site author's Github page | Clicking or tapping | Pass |
-| LinkedIn Icon in footer| Opens a new tab to site author's LinkedIn page | Clicking or tapping | Pass |
-| All navbar links hover effect | All navbar links, except the one representing the currently active one, "Home", should receive a dark background and the black text should change to match the navbar background | Hover over each button in navbar | Pass |
-| All footer social media icons hover effect | All footer links should invert colors, receive a white background and the icon should change from white to black for contrast | Hover over each social media icon in footer | Pass |
-
-`Reviews - Cork Coffee Friend (reviews.html)`
-
-| Feature | Expected Outcome | Testing Performed | Pass/Fail |
-| --- | --- | --- | --- |
-| The sites title | Link directs the user back to index.html | Clicking or tapping | Pass |
-| Navbar "Home" link | Redirects to the Home page | Clicking or tapping | Pass |
-| Navbar "Contact" link | Redirects to the Contact page | Clicking or tapping | Pass |
-| Instagram Icon in footer| Opens a new tab to site author's Instagram page | Clicking or tapping | Pass |
-| Github Icon in footer| Opens a new tab to site author's Github page | Clicking or tapping | Pass |
-| LinkedIn Icon in footer| Opens a new tab to site author's LinkedIn page | Clicking or tapping | Pass |
-| All navbar links hover effect | All navbar links, except the one representing the currently active one, "Reviews", should receive a dark background and the black text should change to match the navbar background | Hover over each button in navbar | Pass |
-| All footer social media icons hover effect | All footer links should invert colors, receive a white background and the icon should change from white to black for contrast | Hover over each social media icon in footer | Pass |
-
-`Contact - Cork Coffee Friend (contact.html)`
-
-| Feature | Expected Outcome | Testing Performed | Pass/Fail |
-| --- | --- | --- | --- |
-| The sites title | Link directs the user back to index.html | Clicking or tapping | Pass |
-| Navbar "Reviews" link | Redirects to the Reviews page | Clicking or tapping | Pass |
-| Navbar "Home" link | Redirects to the Home page | Clicking or tapping | Pass |
-| Form Submit with Name field empty | Shows an indication that the name field needs to be filled, regardless of if E-Mail field is filled in or not | Clicking or tapping | Pass |
-| Form Submit with Name field filled in but email field empty | Shows an indication that the E-Mail field needs to be filled | Clicking or tapping | Pass |
-| Form Submit with both Name and E-Mail fields filled in | Redirects to the thank-you.html page | Clicking or tapping | Pass |
-| Instagram Icon in footer| Opens a new tab to site author's Instagram page | Clicking or tapping | Pass |
-| Github Icon in footer| Opens a new tab to site author's Github page | Clicking or tapping | Pass |
-| LinkedIn Icon in footer| Opens a new tab to site author's LinkedIn page | Clicking or tapping | Pass |
-| All navbar links hover effect | All navbar links, except the one representing the currently active one, "Contact", should receive a dark background and the black text should change to match the navbar background | Hover over each button in navbar | Pass |
-| All footer social media icons hover effect | All footer links should invert colors, receive a white background and the icon should change from white to black for contrast | Hover over each social media icon in footer | Pass |
-
-`Thank You - Cork Coffee Friend (thank-you.html)`
-
-| Feature | Expected Outcome | Testing Performed | Pass/Fail |
-| --- | --- | --- | --- |
-| The sites title | Link directs the user back to index.html | Clicking or tapping | Pass |
-| Navbar "Home" link | Redirects to the Home page | Clicking or tapping | Pass |
-| Navbar "Reviews" link | Redirects to the Reviews page | Clicking or tapping | Pass |
-| Navbar "Contact" link | Redirects to the Contact page | Clicking or tapping | Pass |
-| "Go back to front page" link inside main text | Redirects to the Home page | Clicking or tapping | Pass |
-| Instagram Icon in footer| Opens a new tab to site author's Instagram page | Clicking or tapping | Pass |
-| Github Icon in footer| Opens a new tab to site author's Github page | Clicking or tapping | Pass |
-| LinkedIn Icon in footer| Opens a new tab to site author's LinkedIn page | Clicking or tapping | Pass |
-| All navbar links hover effect | All navbar links should receive a dark background and the black text should change to match the navbar background | Hover over each button in navbar | Pass |
-| All footer social media icons hover effect | All footer links should invert colors, receive a white background and the icon should change from white to black for contrast | Hover over each social media icon in footer | Pass |
+| "Start New Game" button | Prompts the player to pick an action and activates all player action cards | Clicking or tapping | Pass |
+| All player action cards | Raises the card clicked, and activates the "Play Selected Card" button | Clicking or tapping | Pass |
+| All player action cards when already raised/selected | Lowers the card, and deactivates the "Play card" button | Clicking or tapping | Pass |
+| "Play selected card" | Starts a game round, makes status field say what action was picked, what action the computer picked and the outcome, if the player won their score should go up by one point, if the computer won the "computer score" should go up by one. If the result is a tie no score should go up. If the round number is lower than 5, the next round should start and the player should be prompted to pick another action. If the round is 5 after the winner of the round is declared the final game winner is announced based on the score, highest score wins, ties are possible. At the end of round 5 the "Start New Game" button should reappear. | Clicking or tapping | Pass |
