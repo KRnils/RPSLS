@@ -3,7 +3,7 @@
 
 # RPSLS
 
-Welcome to RPSLS, here you can play the game Rock, Paper, Scissors, Lizard, Spock. The rules are simple, just like Rock paper scissors but with lizards and Spock.
+Welcome to RPSLS, here you can play the game Rock, Paper, Scissors, Lizard, Spock. The rules are simple, just like Rock Paper Scissors but with lizards and Spock.
 
 ![amiresponsive result](assets/readme/amiresponsive-screenshot.jpg)
 

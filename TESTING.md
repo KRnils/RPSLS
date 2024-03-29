@@ -45,11 +45,11 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 __Desktop Scores__
 
-- ![Desktop lighthouse scores](assets/readme/lighthouse-desktop.jpg)
+![Desktop lighthouse scores](assets/readme/lighthouse-desktop.jpg)
 
 __Mobile Scores__
 
-- ![Mobile lighthouse scores](assets/readme/lighthouse-mobile.jpg)
+![Mobile lighthouse scores](assets/readme/lighthouse-mobile.jpg)
 
 
 ### Am I Responsive Results
@@ -57,7 +57,7 @@ __Mobile Scores__
 Below are the results from [Am I Responsive](https://ui.dev/amiresponsive)
 
 * index.html
-![Results of https://ui.dev/amiresponsive test for index.html](assets/readme/amiresponsive-index.jpg)
+![Results of https://ui.dev/amiresponsive test for index.html](assets/readme/amiresponsive-screenshot.jpg)
 
 ## MANUAL TESTING
 ### Devices
