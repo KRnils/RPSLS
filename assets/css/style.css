@@ -43,7 +43,7 @@ body {
 
 /* Middle section styles */
 #game-field {
-    font-size: small;
+    font-size: smaller;
     color: white;
     background-color: #4C607A;
     border: 4px solid white;
@@ -134,7 +134,7 @@ body {
 /* Changes for less small screens above 480px, below 768px*/
 @media screen and (min-width:480px) {
     #game-field {
-        font-size: medium;
+        font-size: small;
     }
     
     .card {
@@ -159,6 +159,10 @@ body {
 
 /* Tablets, above 768 but below 992px */
 @media screen and (min-width:768px) {
+    #game-field {
+        font-size: medium;
+    }
+
     .card {
         font-size: large;
         height: 180px;
