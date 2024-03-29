@@ -82,9 +82,6 @@ Wireframes were created for mobile and desktop versions
 
 - ![Status field screenshot](assets/readme/status-field.jpg)
 
-add image
-
-
 ## Testing
 
 ### W3C Validator Testing
