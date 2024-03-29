@@ -113,7 +113,7 @@ async function playCard(playerHand) {
     } else if (action == "Paper" && computerAction == "Scissors") {
         computerWin(`<br>Scissors cuts Paper. Computer wins!`);
     } else if (action == "Paper" && computerAction == "Lizard") {
-        computerWin("`<br>Lizard eats Paper. Computer wins!`");
+        computerWin(`<br>Lizard eats Paper. Computer wins!`);
     } else if (action == "Paper" && computerAction == "Spock") {
         playerWin(`<br>Paper disproves Spock. You win!`);
     } else if (action == "Scissors" && computerAction == "Rock") {

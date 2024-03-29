@@ -16,7 +16,7 @@ Paper disproves Spock
 Spock vaporizes Rock
 (and as it always has) Rock crushes Scissors"
 
-amiresponsive result
+![amiresponsive result]()
 
 ## Introduction
 
@@ -50,9 +50,11 @@ Wireframes were created for mobile and desktop versions...
 
 - Home page
 
-![index-wireframe](assets/readme/Wireframes/index-wireframe.webp)
+![index-wireframe](assets/readme/index-wireframe.png)
 
 - Home page mobile
+
+![index-mobile-wireframe](assets/readme/Index-mobile-wireframe.png)
 
 ## Features
 
