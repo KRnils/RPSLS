@@ -54,32 +54,33 @@ Wireframes were created for mobile and desktop versions
 
 - Home page mobile
 
-![index-mobile-wireframe](assets/readme/Index-mobile-wireframe.png)
+![index-mobile-wireframe](assets/readme/index-mobile-wireframe.png)
 
 ## Features
 
 * One html and JavaScript page with styles in one CSS file to create a uniform style
-* The game's mechanics and artwork evoke the classic feel of playing cards, while also incorporating elements of modern collectible card games.
+* Card game style aestethics.
 * Five card options
 * Five rounds of exciting Rock Paper Scissors Lizard Spock gameplay.
 * CSS based animations when selecting cards.
-* One action button to play.
-* One action button to start a new game, this button is available after the page loads or after a game has finished.
-* One game status counter with score, round and narration.
-* One CPU/computer player display on top of the site with its hand to visualise computer as the competitor the user is playing against.
-* All buttons react to hover so it's clear that they are interactive
+* One button to play.
+* One button to start a new game, this button is available after the page loads or after a game has finished, but not during a game.
+* One game status counter with fields for score, round and narration.
+* One CPU/computer player display on top of the site with its hand of cards face down to visualise computer as the competitor the user is playing against.
+* All buttons react to hover so it's clear that they are interactive.
+* Responsive design which should look good on all screen size.
 
 ### Existing Features
 
 * __Card game style graphics__
 
-- Text
+- The game's mechanics and artwork evoke the classic feel of playing cards, while also incorporating elements of modern collectible card games.
 
-add image
+![Mobile screenshot](assets/readme/mobile-gameplay.jpg)
 
 - __Other feature__
 
-- Text
+- ![Status field screenshot](assets/readme/status-field.jpg)
 
 add image
 
@@ -90,9 +91,13 @@ add image
 
 __All HTML has been tested with the W3C validator and show no errors or warnings.__
 
-add results
+- [Results for index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkrnils.github.io%2FRPSLS%2Findex.html)
 
 __All CSS has been testeed with W3C validator (Jigsaw) and show no errors or warnings.__
+
+- [Results for style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkrnils.github.io%2FRPSLS%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+
+__All JavaScript has been testeed with [JSHint](https://jshint.com/)__
 
 add results
 
@@ -104,7 +109,8 @@ see [TESTING.md](TESTING.md) for all details and a full list of scores and other
 
 ### Solved Bugs
 
-* Making buttons clickable instantly
+* Early on it took one click with no effect to make the player action cards behave as expected. This seems to be because of the "checked" attribute which is being assigned in the JavaScript
+* For a while it was possible to play a card while the game status was still being updated causing multiple rounds to be played at once and messing up the output. This is possible because of the use of async to delay the output. Buttons were set to disable while the output is being written to avoid this issue.
 
 ### Known Bugs
 
@@ -128,13 +134,13 @@ The live link can be found here - https://krnils.github.io/RPSLS/
 
 ### Code
 
-Almost all code is written from scratch, borrowed code has been modified to fit RPSLS better except for the sleep for Javascript one line solution.
+Almost all code is written from scratch, borrowed code has been modified to fit RPSLS better except for the sleep for JavaScript one line solution.
 
 - Some coding solutions were inspired by the Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) project
 - Stacked cards inspiration https://freefrontend.com/css-stacked-cards/
 - Media queries reference https://www.solodev.com/blog/web-design/media-queries-and-mobile-css-best-practices.stml
 - How to uppercase first letter in a string https://www.shecodes.io/athena/3710-how-to-capitalize-the-first-letter-in-a-string-with-javascript
-- Javascript version of sleep https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+- JavaScript version of sleep https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 
 ### Tools
 
@@ -142,6 +148,6 @@ Almost all code is written from scratch, borrowed code has been modified to fit 
 - [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1) helped find issues with performance, accessibility, and SEO. The final results are also included in this README.md.
 - [W3C HTML Validator](https://validator.w3.org/) Was used to validate all HTML, some issues were found and fixed this way.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) Was used to validate the CSS, no issues were found.
-- 
+- [JSHint](https://jshint.com/) Was used to check the JavaScript for errors (see testing section above).
 - [Coolors](https://coolors.co/) was used to help pick colors that fit the mood while maintaining good contrast for readability and accessibility.
 - [http://ecotrust-canada.github.io/markdown-toc](http://ecotrust-canada.github.io/markdown-toc) table of contents generated with markdown-toc
