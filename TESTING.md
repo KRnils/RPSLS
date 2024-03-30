@@ -1,4 +1,4 @@
-# Cork Coffe Friend - Testing
+# RPSLS - Testing
 
 ## CONTENTS
 
