@@ -51,7 +51,7 @@ function clickCard(currentButton, allButtons) {
             button.style.transform = "translateY(-30%)";
             button.checked = true;
             document.getElementById("play-card-button").disabled = false;    //Enable the play button.
-        } else if (button === currentButton && currentButton.checked === true){
+        } else if (button === currentButton && currentButton.checked === true) {
             button.style.transform = "translateY(0px)";
             button.checked = false;
             document.getElementById("play-card-button").disabled = true;    //Disable the play button if the selected card is deselected.
@@ -63,7 +63,7 @@ function clickCard(currentButton, allButtons) {
 }
 
 /** Activates the game */
-function startGame(){
+function startGame() {
     resetGame();
     enableGameButtons();
     document.getElementById("game-status").innerHTML = "Pick a card and play it";
@@ -172,31 +172,31 @@ function computerHand() {
 }
 
 /** This is repeated a lot so to make things a little bit simpler it was turned into a function */
-function computerWin(text){
+function computerWin(text) {
     document.getElementById("game-status").innerHTML += text;
     document.getElementById("computer-score").innerHTML = parseInt(document.getElementById("computer-score").innerHTML) + 1;
 }
 
 /** This is repeated a lot so to make things a little bit simpler it was turned into a function */
-function playerWin(text){
+function playerWin(text) {
     document.getElementById("game-status").innerHTML += text;
     document.getElementById("score").innerHTML = parseInt(document.getElementById("score").innerHTML) + 1;
 }
 
 /** Disables all game buttons so they cannot be activated when they shouldn't be. */
-function disableGameButtons(){
+function disableGameButtons() {
     document.getElementById("play-card-button").disabled = true;
     let buttons = document.getElementsByClassName("card");
-    for (let button of buttons){
+    for (let button of buttons) {
         button.disabled = true;
     }
 }
 
 /** Enables all game buttons so the game can be played */
-function enableGameButtons(){
+function enableGameButtons() {
     document.getElementById("play-card-button").disabled = false;
     let buttons = document.getElementsByClassName("card");
-    for (let button of buttons){
+    for (let button of buttons) {
         button.disabled = false;
     }
 }
@@ -205,7 +205,7 @@ function enableGameButtons(){
  * Sets game status to the starting value, hides game status and sets score and round back to 0. Also makes the start game button visible again.
  * Finally disables the game buttons until start is pressed again.
  */
-function resetGame(){
+function resetGame() {
     document.getElementById("score").innerHTML = "0";
     document.getElementById("computer-score").innerHTML = "0";
     document.getElementById("round").innerHTML = "1";
